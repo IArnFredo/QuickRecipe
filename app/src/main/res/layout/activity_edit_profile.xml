@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/design2"
+    tools:context=".EditProfile">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="167dp"
+        android:layout_height="168dp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditProfiletext"
+        app:layout_constraintVertical_bias="0.03"
+        app:shapeAppearanceOverlay="@style/roundedImage"
+        app:srcCompat="@drawable/user" />
+
+    <Button
+        android:id="@+id/backbtn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/back"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/EditProfiletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="250dp"
+        android:height="60dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Edit Profile"
+        android:textColor="@color/black"
+        android:textSize="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backbtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/nametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nametxt"
+        app:layout_constraintBottom_toTopOf="@+id/editname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nametxt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561" />
+
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#fc3503"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editname" />
+
+    <Button
+        android:id="@+id/changeImg"
+        android:layout_width="55sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/corner_bg"
+        android:textColorHighlight="#00FFFFFF"
+        android:textColorLink="#00FFFFFF"
+        app:icon="@drawable/ic_baseline_add_photo_alternate_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--    <TextView-->
+    <!--        android:id="@+id/name"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Full Name"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="12sp"-->
+    <!--        android:fontFamily="@font/poppins_semibold"-->
+    <!--        android:layout_marginTop="60dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.12"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/title" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/nameInput"-->
+    <!--        android:layout_width="290dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        android:hint="Enter your name"-->
+    <!--        android:textSize="11sp"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:textCursorDrawable="@color/black"-->
+    <!--        android:backgroundTint="@color/black"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/name" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/email"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Email Address"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="12sp"-->
+    <!--        android:fontFamily="@font/poppins_semibold"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.13"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/nameInput" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/emailInput"-->
+    <!--        android:layout_width="290dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="textEmailAddress"-->
+    <!--        android:hint="Enter your email"-->
+    <!--        android:textSize="11sp"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:textCursorDrawable="@color/black"-->
+    <!--        android:backgroundTint="@color/black"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/email" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/password"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Password"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="12sp"-->
+    <!--        android:fontFamily="@font/poppins_semibold"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.12"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/emailInput" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/passwordInput"-->
+    <!--        android:layout_width="290dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="textPassword"-->
+    <!--        android:hint="Enter your password"-->
+    <!--        android:textSize="11sp"-->
+    <!--        android:fontFamily="@font/poppins_regular"-->
+    <!--        android:textCursorDrawable="@color/black"-->
+    <!--        android:backgroundTint="@color/black"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/password" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/passwordRetype"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Retype Password"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="12sp"-->
+    <!--        android:fontFamily="@font/poppins_semibold"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.14"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/passwordInput" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

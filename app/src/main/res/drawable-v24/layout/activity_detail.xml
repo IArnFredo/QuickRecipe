@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9BFA7"
+    tools:context=".DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableLeft="@drawable/arrow_back"
+                android:text="Back"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Fried Rice"
+                android:textColor="@color/black"
+                android:textSize="35sp"/>
+
+            <ImageView
+                android:id="@+id/rectangles"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginStart="24dp"
+                android:maxWidth="100dp"
+                android:maxHeight="100dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/rectangle_red" />
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carousel"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="50dp"
+                app:slideInterval="0"
+                app:radius="6dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#FFFFFF">
+
+            </com.synnapps.carouselview.CarouselView>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true">
+                <Button
+                    android:id="@+id/like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="15dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableRight="@drawable/thumb_up"
+                    android:text="Like"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"/>
+                <Button
+                    android:id="@+id/favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableRight="@drawable/star_border"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Favorite"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ingredientTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <TextView
+                android:id="@+id/ingredient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="1. Salt\n2.Sugar"
+                android:textColor="#333"/>
+
+            <TextView
+                android:id="@+id/stepText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step by Step"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <TextView
+                android:id="@+id/step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="1. Nyalain kompor\n2. Lempar garam dan gula\n3. Done"
+                android:textColor="#333"/>
+
+            <TextView
+                android:id="@+id/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comment"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Comment here"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14sp"
+                    android:textCursorDrawable="@color/black"
+                    android:inputType="textMultiLine"
+                    android:lines="6"
+                    android:gravity="top"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

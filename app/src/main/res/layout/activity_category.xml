@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/design6"
+    android:orientation="vertical"
+    tools:context=".Category">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+        android:fontFamily="@font/poppins_regular"
+        android:rotation="0"
+        android:text="Back"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Category"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rectangles"
+        android:layout_width="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:srcCompat="@drawable/orangebar" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/riceBtn"
+                    android:layout_width="400px"
+                    android:layout_height="400px"
+                    android:adjustViewBounds="false"
+                    android:cropToPadding="false"
+                    android:fontFamily="@font/poppins_regular"
+                    android:scaleType="centerCrop"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.18"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/rice" />
+
+                <ImageButton
+                    android:id="@+id/seafoodBtn"
+                    android:layout_width="400px"
+                    android:layout_height="400px"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:fontFamily="@font/poppins_regular"
+                    android:scaleType="centerCrop"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.432"
+                    app:layout_constraintStart_toEndOf="@+id/riceBtn"
+                    app:srcCompat="@drawable/seafood"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageButton
+                    android:id="@+id/chickenBtn"
+                    android:layout_width="400px"
+                    android:layout_height="400px"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:scaleType="centerCrop"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.18"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/riceBtn"
+                    app:srcCompat="@drawable/chicken" />
+
+                <ImageButton
+                    android:id="@+id/redmeatBtn"
+                    android:layout_width="400px"
+                    android:layout_height="400px"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:scaleType="centerCrop"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.432"
+                    app:layout_constraintStart_toEndOf="@+id/riceBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/riceBtn"
+                    app:srcCompat="@drawable/red_meat" />
+
+                <ImageButton
+                    android:id="@+id/vegetablesBtn"
+                    android:layout_width="400px"
+                    android:layout_height="400px"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:scaleType="centerCrop"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.18"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chickenBtn"
+                    app:srcCompat="@drawable/vegetables" />
+
+                <ImageButton
+                    android:id="@+id/eggsBtn"
+                    android:layout_width="400px"
+                    android:layout_height="400px"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:scaleType="centerCrop"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.432"
+                    app:layout_constraintStart_toEndOf="@+id/riceBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/chickenBtn"
+                    app:srcCompat="@drawable/eggs" />
+
+                <ImageButton
+                    android:id="@+id/noodlesBtn"
+                    android:layout_width="400px"
+                    android:layout_height="400px"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:scaleType="centerCrop"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.18"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/vegetablesBtn"
+                    app:srcCompat="@drawable/noodles" />
+
+                <ImageButton
+                    android:id="@+id/dessertBtn"
+                    android:layout_width="400px"
+                    android:layout_height="400px"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:scaleType="centerCrop"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/noodlesBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/vegetablesBtn"
+                    app:srcCompat="@drawable/dessert" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
