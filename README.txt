@@ -1,4 +1,4 @@
-# QuickRecipe
+QuickRecipe
 
 Nama Kelompok<br>
 Julius Alfredo - 00000036372<br>
@@ -13,7 +13,7 @@ Tahap Pembukaan Project<br>
 2.Buka File Project Melalui android studio<br>
 3.Jalankan menggunakan run / shift+f10<br>
 
-# NOTED : PEMAKAIAN BANDWIDTH CLOUD STORAGE HANYA 1GB/Hari.
+NOTED : PEMAKAIAN BANDWIDTH CLOUD STORAGE HANYA 1GB/Hari.
 
 Aplikasi memakai firebase sebagai database, picasso sebagai library memasukkan image ke dalam view.
 
