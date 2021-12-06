@@ -1,6 +1,6 @@
 # QuickRecipe
 
-Nama Kelompok
+Nama Kelompok<br>
 Julius Alfredo - 00000036372<br>
 Neldy Wijaya – 00000036532<br>
 Ruben Rafferty – 00000036238<br>
