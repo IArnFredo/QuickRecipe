@@ -3,9 +3,9 @@
 Nama Kelompok
 Julius Alfredo - 00000036372<br>
 Neldy Wijaya – 00000036532<br>
-Ruben Rafferty – 00000036238
-Jason Tandiono – 00000035990
-Felix Ferdinand – 00000035927
+Ruben Rafferty – 00000036238<br>
+Jason Tandiono – 00000035990<br>
+Felix Ferdinand – 00000035927<br>
 
 Aplikasi memakai firebase sebagai database, picasso sebagai library memasukkan image ke dalam view.
 
