@@ -9,7 +9,7 @@ Felix Ferdinand – 00000035927<br>
 
 Aplikasi memakai firebase sebagai database, picasso sebagai library memasukkan image ke dalam view.
 
-pada build gradle, gradle-gradle yang diimport adalah
+Pada build gradle, gradle-gradle yang diimport adalah
 
     implementation 'com.firebaseui:firebase-ui-firestore:8.0.0'
     implementation 'androidx.appcompat:appcompat:1.3.1'
