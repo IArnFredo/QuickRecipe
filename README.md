@@ -1,15 +1,15 @@
 # QuickRecipe
 
-Nama Kelompok
-Julius Alfredo - 00000036372
-Neldy Wijaya – 00000036532
-Ruben Rafferty – 00000036238
-Jason Tandiono – 00000035990
-Felix Ferdinand – 00000035927
+Nama Kelompok<br>
+Julius Alfredo - 00000036372<br>
+Neldy Wijaya – 00000036532<br>
+Ruben Rafferty – 00000036238<br>
+Jason Tandiono – 00000035990<br>
+Felix Ferdinand – 00000035927<br>
 
 Aplikasi memakai firebase sebagai database, picasso sebagai library memasukkan image ke dalam view.
 
-pada build gradle, gradle-gradle yang diimport adalah
+Pada build gradle, gradle-gradle yang diimport adalah
 
     implementation 'com.firebaseui:firebase-ui-firestore:8.0.0'
     implementation 'androidx.appcompat:appcompat:1.3.1'
