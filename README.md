@@ -7,6 +7,12 @@ Ruben Rafferty – 00000036238<br>
 Jason Tandiono – 00000035990<br>
 Felix Ferdinand – 00000035927<br>
 
+
+Tahap Pembukaan Project<br>
+1.Extract File<br>
+2.Buka File Project Melalui android studio<br>
+3.Jalankan menggunakan run / shift+f10<br>
+
 Aplikasi memakai firebase sebagai database, picasso sebagai library memasukkan image ke dalam view.
 
 Pada build gradle, gradle-gradle yang diimport adalah
