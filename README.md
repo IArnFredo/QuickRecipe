@@ -1,11 +1,11 @@
 # QuickRecipe
 
 Nama Kelompok
-Julius Alfredo - 00000036372
-Neldy Wijaya – 00000036532
-Ruben Rafferty – 00000036238
-Jason Tandiono – 00000035990
-Felix Ferdinand – 00000035927
+Julius Alfredo - 00000036372\n
+Neldy Wijaya – 00000036532\n
+Ruben Rafferty – 00000036238\n
+Jason Tandiono – 00000035990\n
+Felix Ferdinand – 00000035927\n
 
 Aplikasi memakai firebase sebagai database, picasso sebagai library memasukkan image ke dalam view.
 
